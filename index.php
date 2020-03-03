@@ -62,9 +62,11 @@ function main($client) {
                 preg_match('/<(.*?)>/', $from, $match);
                 $from =$match[1];
                 echo $from;
+                break;
             }
         }
         $FOUND_BODY = decodeBody($body['data']);
+        echo $FOUND_BODY;
     }
 }
 
